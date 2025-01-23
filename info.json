@@ -1,0 +1,16 @@
+{
+  "name": "aquilo-seabloom-algaculture",
+  "title": "Wooden Aquilo: Seabloom Algaculture",
+  "description": "",
+  "author": "SafTheLamb",
+  "version": "0.1.0",
+  "factorio_version": "2.0",
+  "homepage": "https://github.com/SafTheLamb/fm-aquilo-seabloom-algaculture",
+  "dependencies": [
+    "base >= 2.0.7",
+    "fdsl >= 0.1.7",
+    "space-age",
+    "wood-universe-assets >= 1.0.0"
+  ],
+  "space_travel_required": true
+}
