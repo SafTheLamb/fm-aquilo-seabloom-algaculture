@@ -8,9 +8,9 @@
   "homepage": "https://github.com/SafTheLamb/fm-aquilo-seabloom-algaculture",
   "dependencies": [
     "base >= 2.0.7",
-    "fdsl >= 0.1.7",
+    "fdsl >= 0.1.8",
     "space-age",
-    "wood-universe-assets >= 1.0.0"
+    "wood-universe-assets >= 1.3.0"
   ],
   "space_travel_required": true
 }

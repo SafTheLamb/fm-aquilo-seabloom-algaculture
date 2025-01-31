@@ -1,3 +1,6 @@
+local hit_effects = require("__base__.prototypes.entity.hit-effects")
+local sounds = require("__base__.prototypes.entity.sounds")
+
 data:extend({
   {
     type = "agricultural-tower",
@@ -13,7 +16,7 @@ data:extend({
     close_sound = sounds.machine_close,
     input_inventory_size = 3,
     radius_visualisation_picture = {
-      filename = "__core__/graphics/white-square.png",
+      filename = "__wood-universe-assets__/graphics/micro-square.png",
       priority = "extra-high-no-scale",
       width = 10,
       height = 10
@@ -22,21 +25,21 @@ data:extend({
     radius = 6,
     crane = require("prototypes.entity.algacultural-bay-crane"),
     planting_procedure_points = {
-      {0.0, 0.0, 0.75},
-      {0.0, 0.0, 0.0},
-      {0.0, 0.05, -0.05},
-      {0.0353553, 0.0353553, -0.1},
-      {0.05, 0.0, -0.15},
-      {0.0353553, -0.0353553, -0.2},
-      {0.0, -0.05, -0.25},
-      {-0.0353553, -0.0353553, -0.3},
-      {-0.05, 0.0, -0.35},
-      {-0.0353553, 0.0353553, -0.4},
-      {0.0, 0.0, -0.45},
-      {0.0, 0.0, 0.0}
+      -- {0.0, 0.0, 0.75},
+      -- {0.0, 0.0, 0.0},
+      -- {0.0, 0.05, -0.05},
+      -- {0.0353553, 0.0353553, -0.1},
+      -- {0.05, 0.0, -0.15},
+      -- {0.0353553, -0.0353553, -0.2},
+      -- {0.0, -0.05, -0.25},
+      -- {-0.0353553, -0.0353553, -0.3},
+      -- {-0.05, 0.0, -0.35},
+      -- {-0.0353553, 0.0353553, -0.4},
+      -- {0.0, 0.0, -0.45},
+      {0.0, 0.0, -0.2}
     },
     harvesting_procedure_points = {
-      {0.0, 0.0, 1.0}
+      {0.0, 0.0, 0.0}
     },
     drawing_box_vertical_extension = 2.5,
     heating_energy = "100kW",
@@ -83,7 +86,7 @@ data:extend({
     surface_conditions = {
       {
         property = "pressure",
-        min = 1000,
+        min = 10,
         max = 2000
       }
     },
@@ -98,18 +101,18 @@ data:extend({
     graphics_set = {
       animation = {
         layers = {
-          util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base", {
+          util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base", {
             priority = "high",
             animation_speed = 0.25,
             frame_count = 64,
-            scale = 1/3
+            scale = 1/4
           }),
-          util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-shadow", {
+          util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base-shadow", {
             priority = "high",
             frame_count = 1,
             repeat_count = 64,
             draw_as_shadow = true,
-            scale = 1/3
+            scale = 1/4
           })
         }
       },
@@ -118,12 +121,11 @@ data:extend({
         {
           always_draw = true,
           fog_mask = { rect = {{-30, -30}, {30, -2.75}}, falloff = 1 },
-          animation = util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base", {
+          animation = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base", {
             frame_count = 1,
-            scale = 1/3
+            scale = 1/4
           }),
         },
-
         {
           --constant_speed = true,
           always_draw = true,
@@ -133,7 +135,7 @@ data:extend({
             frame_count = 64,
             animation_speed = 0.25,
             tint_as_overlay = true,
-            scale = 1/3
+            scale = 0.5
           }),
         },
         {
@@ -146,7 +148,7 @@ data:extend({
             frame_count = 64,
             animation_speed = 0.25,
             blend_mode = "additive",
-            scale = 1/3
+            scale = 1/6
           }),
         },
         {
@@ -163,7 +165,7 @@ data:extend({
       },
       water_reflection = {
         pictures = {
-          filename = "__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-reflection.png",
+          filename = "__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base-reflection.png",
           priority = "extra-high",
           width = 24,
           height = 36,
