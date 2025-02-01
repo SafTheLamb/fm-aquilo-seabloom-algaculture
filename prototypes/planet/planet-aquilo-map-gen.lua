@@ -1,25 +1,19 @@
 data:extend({
   {
     type = "noise-expression",
-    name = "aquilo_starting_seabloom",
-    expression = "starting_spot_at_angle{angle = aquilo_angle + 120, distance = 80, radius = aquilo_spot_size * 0.6, x_distortion = 0, y_distortion = 0}"
+    name = "aquilo_seabloom_noise",
+    expression = "abs(multioctave_noise{x = x, y = y, persistence = 0.8, seed0 = map_seed, seed1 = 700000, octaves = 3, input_scale = 1/20 * control:seabloom:frequency }\z
+                      * multioctave_noise{x = x, y = y, persistence = 0.8, seed0 = map_seed, seed1 = 200000, octaves = 3, input_scale = 1/6 * control:seabloom:frequency })"
   },
   {
     type = "noise-expression",
-    name = "aquilo_seabloom_probability",
-    expression = "(control:seabloom:size > 0)\z
-                  * (max(aquilo_starting_seabloom * 0.2,\z
-                         min(aquilo_starting_mask, aquilo_seabloom_spots) * 0.12))"
+    name = "aquilo_seabloom_noise_b",
+    expression = "abs(multioctave_noise{x = x, y = y, persistence = 0.8, seed0 = map_seed, seed1 = 750000, octaves = 3, input_scale = 1/20 * control:seabloom:frequency }\z
+                      * multioctave_noise{x = x, y = y, persistence = 0.8, seed0 = map_seed, seed1 = 250000, octaves = 3, input_scale = 1/6 * control:seabloom:frequency })"
   },
   {
     type = "noise-expression",
-    name = "aquilo_seabloom_spots",
-    expression = "aquilo_spot_noise{seed = 566,\z
-                                    count = 3,\z
-                                    skip_offset = 1,\z
-                                    region_size = 600 + 400 / control:seabloom:frequency,\z
-                                    density = 1,\z
-                                    radius = aquilo_spot_size * 1.2 * sqrt(control:seabloom:size),\z
-                                    favorability = 1}"
+    name = "aquilo_seabloom_cutoff",
+    expression = "aquilo_elevation + 3"
   },
 })

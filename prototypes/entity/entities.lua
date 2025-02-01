@@ -105,14 +105,14 @@ data:extend({
             priority = "high",
             animation_speed = 0.25,
             frame_count = 64,
-            scale = 1/4
+            scale = 1/3
           }),
           util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base-shadow", {
             priority = "high",
             frame_count = 1,
             repeat_count = 64,
             draw_as_shadow = true,
-            scale = 1/4
+            scale = 1/3
           })
         }
       },
@@ -123,7 +123,7 @@ data:extend({
           fog_mask = { rect = {{-30, -30}, {30, -2.75}}, falloff = 1 },
           animation = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base", {
             frame_count = 1,
-            scale = 1/4
+            scale = 1/3
           }),
         },
         {
@@ -135,7 +135,7 @@ data:extend({
             frame_count = 64,
             animation_speed = 0.25,
             tint_as_overlay = true,
-            scale = 0.5
+            scale = 1/8
           }),
         },
         {
@@ -148,7 +148,7 @@ data:extend({
             frame_count = 64,
             animation_speed = 0.25,
             blend_mode = "additive",
-            scale = 1/6
+            scale = 1/8
           }),
         },
         {

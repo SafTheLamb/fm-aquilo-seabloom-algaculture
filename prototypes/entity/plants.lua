@@ -136,8 +136,8 @@ data:extend({
     autoplace = {
       control = "seabloom",
       -- order = "a[tree]-b[forest]-a",
-      probability_expression = "aquilo_seabloom_probability",
-      -- richness_expression = "random_penalty_at(3, 1)",
+      probability_expression = "min(aquilo_seabloom_noise, aquilo_seabloom_cutoff)",
+      richness_expression = "random_penalty_at(3, 1)",
       tile_restriction = {"ammoniacal-ocean", "ammoniacal-ocean-2"}
     },
     created_effect = {
@@ -290,10 +290,10 @@ data:extend({
     impact_category = "tree",
     -- factoriopedia_simulation = simulations.factoriopedia_yumako_tree,
     autoplace = {
-      -- control = "gleba_plants",
+      control = "seabloom",
       -- order = "a[tree]-b[forest]-a",
-      probability_expression = "0",
-      -- richness_expression = "random_penalty_at(3, 1)",
+      probability_expression = "min(aquilo_seabloom_noise_b, aquilo_seabloom_cutoff)",
+      richness_expression = "random_penalty_at(3, 1)",
       tile_restriction = {"ammoniacal-ocean", "ammoniacal-ocean-2"}
     },
     variations = aquilo_algae_variations("seabloom-straggler", 8, 4),
@@ -325,4 +325,14 @@ data:extend({
     -- },
     map_color = {51, 128, 32},
   }
+})
+
+local worldgen_seabloom = util.table.deepcopy(data.raw.plant["seabloom-cluster"])
+worldgen_seabloom.localised_name = {"", "entity-name.seabloom-cluster"}
+worldgen_seabloom.name = "native-seabloom-cluster"
+worldgen_seabloom.created_effect = nil
+worldgen_seabloom.hidden_in_factoriopedia = true
+data.raw.plant["seabloom-cluster"].autoplace.probability_expression = "0"
+data:extend({
+  worldgen_seabloom
 })
