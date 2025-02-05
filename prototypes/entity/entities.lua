@@ -16,13 +16,13 @@ data:extend({
     close_sound = sounds.machine_close,
     input_inventory_size = 3,
     radius_visualisation_picture = {
-      filename = "__wood-universe-assets__/graphics/micro-square.png",
+      filename = "__wood-universe-assets__/graphics/algaculture-square.png",
       priority = "extra-high-no-scale",
       width = 10,
       height = 10
     },
     growth_grid_tile_size = 1,
-    radius = 6,
+    radius = 5,
     crane = require("prototypes.entity.algacultural-bay-crane"),
     planting_procedure_points = {
       -- {0.0, 0.0, 0.75},
@@ -135,7 +135,8 @@ data:extend({
             frame_count = 64,
             animation_speed = 0.25,
             tint_as_overlay = true,
-            scale = 1/8
+            multiply_shift = 5/6,
+            scale = 1/3
           }),
         },
         {
@@ -148,7 +149,8 @@ data:extend({
             frame_count = 64,
             animation_speed = 0.25,
             blend_mode = "additive",
-            scale = 1/8
+            multiply_shift = 5/6,
+            scale = 1/3
           }),
         },
         {

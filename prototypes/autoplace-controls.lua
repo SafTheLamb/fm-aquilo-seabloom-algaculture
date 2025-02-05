@@ -5,6 +5,6 @@ data:extend({
     localised_name = {"", "[entity=seabloom-cluster] ", {"item-name.seabloom"}},
     richness = false,
     order = "e-s",
-    category = "resource"
+    category = "terrain"
   },
 })

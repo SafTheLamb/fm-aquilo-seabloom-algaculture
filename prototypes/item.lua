@@ -6,9 +6,9 @@ data:extend({
   {
     type = "item",
     name = "algacultural-bay",
-    icon = "__space-age__/graphics/icons/agricultural-tower.png",
+    icon = "__wood-universe-assets__/graphics/icons/algacultural-bay.png",
     subgroup = "agriculture",
-    order = "c[algacultural-bay]",
+    order = "a[algacultural-bay]",
     inventory_move_sound = item_sounds.mechanical_large_inventory_move,
     pick_sound = item_sounds.mechanical_large_inventory_pickup,
     drop_sound = item_sounds.mechanical_large_inventory_move,

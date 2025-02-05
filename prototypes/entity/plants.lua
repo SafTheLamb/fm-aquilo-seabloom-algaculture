@@ -74,30 +74,30 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
         scale = 0.33 * scale_multiplier
       },
 
-      leaf_generation =
-      {
-        type = "create-particle",
-        particle_name = "leaf-particle",
-        offset_deviation = {{-0.5, -0.5}, {0.5, 0.5}},
-        initial_height = 2,
-        initial_vertical_speed = 0.01,
-        initial_height_deviation = 0.05,
-        speed_from_center = 0.01,
-        speed_from_center_deviation = 0.01
-      },
-      branch_generation =
-      {
-        type = "create-particle",
-        particle_name = "branch-particle",
-        offset_deviation = {{-0.5, -0.5}, {0.5, 0.5}},
-        initial_height = 2,
-        initial_height_deviation = 2,
-        initial_vertical_speed = 0.01,
-        speed_from_center = 0.03,
-        speed_from_center_deviation = 0.01,
-        frame_speed = 0.4,
-        repeat_count = 15
-      }
+      -- leaf_generation =
+      -- {
+      --   type = "create-particle",
+      --   particle_name = "leaf-particle",
+      --   offset_deviation = {{-0.5, -0.5}, {0.5, 0.5}},
+      --   initial_height = 2,
+      --   initial_vertical_speed = 0.01,
+      --   initial_height_deviation = 0.05,
+      --   speed_from_center = 0.01,
+      --   speed_from_center_deviation = 0.01
+      -- },
+      -- branch_generation =
+      -- {
+      --   type = "create-particle",
+      --   particle_name = "branch-particle",
+      --   offset_deviation = {{-0.5, -0.5}, {0.5, 0.5}},
+      --   initial_height = 2,
+      --   initial_height_deviation = 2,
+      --   initial_vertical_speed = 0.01,
+      --   speed_from_center = 0.03,
+      --   speed_from_center_deviation = 0.01,
+      --   frame_speed = 0.4,
+      --   repeat_count = 15
+      -- }
     }
     table.insert(variations, variation)
   end
@@ -121,8 +121,8 @@ data:extend({
         }
       }
     },
-    -- mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
-    -- mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
+    mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
+    mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
     growth_ticks = 1 * minute,
     harvest_emissions = plant_harvest_emissions,
     max_health = 10,
@@ -136,7 +136,7 @@ data:extend({
     autoplace = {
       control = "seabloom",
       -- order = "a[tree]-b[forest]-a",
-      probability_expression = "min(aquilo_seabloom_noise, aquilo_seabloom_cutoff)",
+      probability_expression = "0",
       richness_expression = "random_penalty_at(3, 1)",
       tile_restriction = {"ammoniacal-ocean", "ammoniacal-ocean-2"}
     },
@@ -269,7 +269,7 @@ data:extend({
     minable = {
       mining_particle = "leaf-particle",
       mining_time = 0.5,
-      results = {{type="item", name="seaweed", amount=1}},
+      results = {{type="item", name="seawilt", amount=2}},
       mining_trigger = {
         {
           type = "direct",
@@ -277,9 +277,9 @@ data:extend({
         }
       }
     },
-    -- mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
-    -- mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
-    growth_ticks = 5 * minute,
+    mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
+    mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
+    growth_ticks = 1 * minute,
     harvest_emissions = plant_harvest_emissions,
     max_health = 10,
     collision_box = {{-0.3, -0.3}, {0.3, 0.3}},
@@ -328,11 +328,11 @@ data:extend({
 })
 
 local worldgen_seabloom = util.table.deepcopy(data.raw.plant["seabloom-cluster"])
-worldgen_seabloom.localised_name = {"", "entity-name.seabloom-cluster"}
+worldgen_seabloom.localised_name = {"entity-name.seabloom-cluster"}
 worldgen_seabloom.name = "native-seabloom-cluster"
 worldgen_seabloom.created_effect = nil
 worldgen_seabloom.hidden_in_factoriopedia = true
-data.raw.plant["seabloom-cluster"].autoplace.probability_expression = "0"
+worldgen_seabloom.autoplace.probability_expression = "min(aquilo_seabloom_noise, aquilo_seabloom_cutoff)"
 data:extend({
   worldgen_seabloom
 })
