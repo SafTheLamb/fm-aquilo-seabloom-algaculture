@@ -1,9 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+  Changes:
+    - Change recipe for blooming seabloom to require fluoroketone instead
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
   Bugfixes:
-    - Fix localisation of world-generated seabloom clusters.
+    - Fix localisation of world-generated seabloom clusters
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
   Major Features:
-    - Initial release.
+    - Initial release

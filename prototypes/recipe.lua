@@ -46,7 +46,7 @@ data:extend({
     icon = "__wood-universe-assets__/graphics/icons/seabloom-cultivation.png",
     icons = {
       {icon="__wood-universe-assets__/graphics/icons/seabloom.png"},
-      {icon="__space-age__/graphics/icons/fluid/ammonia.png", shift={-8,-8}, scale=0.3},
+      {icon="__space-age__/graphics/icons/fluid/fluoroketone-hot.png", shift={-8,-8}, scale=0.3},
       {icon="__wood-universe-assets__/graphics/icons/seaweed.png", shift={8,-8}, scale=0.3},
     },
     category = "organic-or-chemistry",
@@ -55,14 +55,16 @@ data:extend({
     enabled = false,
     auto_recycle = false,
     allow_productivity = true,
-    energy_required = 5,
+    allow_decomposition = false,
+    energy_required = 2,
     ingredients = {
-      {type="item", name="seaweed", amount=5},
-      {type="fluid", name="ammonia", amount=50}
+      {type="item", name="seaweed", amount=5, ignored_by_stats=4},
+      {type="fluid", name="fluoroketone-hot", amount=6, ignored_by_stats=3}
     },
     results = {
       {type="item", name="seabloom", amount=1, probability=1/3},
-      {type="item", name="seawilt", amount=4}
+      {type="fluid", name="fluoroketone-cold", amount=3, temperature=-150, ignored_by_stats=3, ignored_by_productivity=3},
+      {type="item", name="seawilt", amount=4, ignored_by_stats=4, ignored_by_productivity=4},
     },
     main_product = "seabloom"
   },
