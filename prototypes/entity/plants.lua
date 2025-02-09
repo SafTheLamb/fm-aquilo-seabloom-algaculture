@@ -269,7 +269,7 @@ data:extend({
     minable = {
       mining_particle = "leaf-particle",
       mining_time = 0.5,
-      results = {{type="item", name="seawilt", amount=2}},
+      results = {{type="item", name=settings.startup["seabloom-modify-vanilla"].value and "seawilt" or "seaweed", amount=2}},
       mining_trigger = {
         {
           type = "direct",

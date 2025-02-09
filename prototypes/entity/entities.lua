@@ -5,7 +5,7 @@ data:extend({
   {
     type = "agricultural-tower",
     name = "algacultural-bay",
-    icon = "__space-age__/graphics/icons/agricultural-tower.png",
+    icon = "__wood-universe-assets__/graphics/icons/algacultural-bay.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "algacultural-bay"},
     fast_replaceable_group = "algacultural-bay",

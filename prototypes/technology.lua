@@ -20,8 +20,8 @@ data:extend({
     icon = "__wood-universe-assets__/graphics/technology/seabloom-algaculture.png",
     icon_size = 256,
     effects = {
-      {type="unlock-recipe", recipe="seabloom-cultivation"},
-      {type="unlock-recipe", recipe="nutrients-from-seabloom"}
+      {type="unlock-recipe", recipe="nutrients-from-seabloom"},
+      {type="unlock-recipe", recipe="seaweed-snack"}
     },
     prerequisites = {"agricultural-science-pack", "cryogenic-science-pack", "seabloom-algaculture"},
     unit = {

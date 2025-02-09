@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+  Major Features:
+    - Add custom reconstituted wood recipe
+    - Add seaweed snacks. Nutrients looks somewhere between salt, sugar, and msg...? savory!
+  Changes:
+    - Add Wooden Industry as an optional dependency
+    - Increased seaweed spoilage time from 2 to 4 minutes
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
   Changes:
     - Change recipe for blooming seabloom to require fluoroketone instead
