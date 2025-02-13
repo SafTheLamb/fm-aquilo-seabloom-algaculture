@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+  Compatibility:
+    - Factorissimo 3 support, relaxing solar power restriction to 1%
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
   Major Features:
     - Add custom reconstituted wood and resin recipe
