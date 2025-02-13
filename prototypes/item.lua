@@ -20,7 +20,7 @@ data:extend({
     weight = 100*kg,
   },
   {
-    type = "item",
+    type = "capsule",
     name = "seaweed",
     localised_name = {"item-name.seaweed"},
     icon = "__wood-universe-assets__/graphics/icons/seaweed.png",
@@ -47,7 +47,7 @@ data:extend({
     capsule_action = item_effects.seaweed_snack_regen
   },
   {
-    type = "item",
+    type = "capsule",
     name = "seabloom",
     localised_name = {"item-name.seabloom"},
     icon = "__wood-universe-assets__/graphics/icons/seabloom.png",

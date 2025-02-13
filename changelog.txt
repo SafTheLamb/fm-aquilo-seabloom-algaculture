@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
   Major Features:
-    - Add custom reconstituted wood recipe
+    - Add custom reconstituted wood and resin recipe
     - Add seaweed snacks. Nutrients looks somewhere between salt, sugar, and msg...? savory!
   Changes:
     - Add Wooden Industry as an optional dependency
