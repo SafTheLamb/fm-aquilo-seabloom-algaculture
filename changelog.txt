@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+  Changes:
+    - Limit algacultural bay recipe to have the same surface conditions as the entity itself
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.2
   Changes:
     - Considerably increase cost of Algacultural bays (when not using any planet start on Aquilo)

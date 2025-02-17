@@ -17,10 +17,17 @@ data:extend({
       {type="item", name="spoilage", amount=20},
       {type="item", name="landfill", amount=1}
     } or {
-      {type="item", name="tungsten-plate", amount=10},
+      {type="item", name="tungsten-plate", amount=15},
       {type="item", name="superconductor", amount=20},
-      {type="item", name="carbon-fiber", amount=15},
-      {type="item", name="agricultural-tower", amount=1},
+      {type="item", name="pentapod-egg", amount=10},
+      {type="item", name="agricultural-tower", amount=1}
+    },
+    surface_conditions = {
+      {
+        property = "pressure",
+        min = 300,
+        max = 300
+      }
     },
     results = {{type="item", name="algacultural-bay", amount=1}}
   },
