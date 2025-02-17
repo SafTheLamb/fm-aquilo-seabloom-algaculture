@@ -86,8 +86,8 @@ data:extend({
     surface_conditions = {
       {
         property = "pressure",
-        min = 10,
-        max = 2000
+        min = 300,
+        max = 300
       }
     },
     damaged_trigger_effect = hit_effects.entity(),

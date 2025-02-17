@@ -1,5 +1,9 @@
 local lumber_item = mods["wood-logistics"] and settings.startup["wood-logistics-lumber"].value and "lumber" or "wood"
 local chip_item = mods["wood-industry"] and settings.startup["wood-industry-resin"].value and "woodchips" or "wood"
+local aquilo_start = false
+if mods["any-planet-start"] then
+  aquilo_start = settings.startup["aps-planet"].value == "aquilo"
+end
 
 data:extend({
   {
@@ -7,11 +11,16 @@ data:extend({
     name = "algacultural-bay",
     enabled = false,
     energy_required = 10,
-    ingredients = {
+    ingredients = aquilo_start and {
       {type="item", name="steel-plate", amount=10},
       {type="item", name="electronic-circuit", amount=3},
       {type="item", name="spoilage", amount=20},
       {type="item", name="landfill", amount=1}
+    } or {
+      {type="item", name="tungsten-plate", amount=10},
+      {type="item", name="superconductor", amount=20},
+      {type="item", name="carbon-fiber", amount=15},
+      {type="item", name="agricultural-tower", amount=1},
     },
     results = {{type="item", name="algacultural-bay", amount=1}}
   },

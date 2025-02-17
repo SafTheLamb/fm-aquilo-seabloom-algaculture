@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+  Changes:
+    - Considerably increase cost of Algacultural bays (when not using any planet start on Aquilo)
+    - Restrict Algacultural bays to Aquilo for now.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
   Compatibility:
     - Factorissimo 3 support, relaxing solar power restriction to 1%

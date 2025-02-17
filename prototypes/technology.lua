@@ -7,6 +7,7 @@ data:extend({
     effects = {
       {type="unlock-recipe", recipe="algacultural-bay"},
       {type="unlock-recipe", recipe="seaweed-blanching"},
+      {type="unlock-recipe", recipe="seawilt-spoilage"}
     },
     prerequisites = {"planet-discovery-aquilo"},
     research_trigger = {
