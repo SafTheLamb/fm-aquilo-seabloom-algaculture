@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+  Compatibility:
+    - Temporarily move surface condition changes to data-final fixes until Factorissimo 3 is updated
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.3
   Changes:
     - Limit algacultural bay recipe to have the same surface conditions as the entity itself
