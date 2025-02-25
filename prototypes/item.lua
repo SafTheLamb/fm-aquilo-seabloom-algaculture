@@ -1,8 +1,9 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local space_age_item_sounds = require("__space-age__.prototypes.item_sounds")
 local item_tints = require("__base__.prototypes.item-tints")
-
 local item_effects = require("prototypes.item-effects")
+
+local subgroup = mods["bioprocessing-tab"] and "aquilo-algaculture" or "aquilo-processes"
 
 data:extend(item_effects.data)
 data:extend({
@@ -30,7 +31,7 @@ data:extend({
       {size=64, filename="__wood-universe-assets__/graphics/icons/seaweed-2.png", scale=0.5},
       {size=64, filename="__wood-universe-assets__/graphics/icons/seaweed-3.png", scale=0.5}
     },
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "d[agriculture]-a[seaweed]",
     plant_result = "seabloom-cluster",
     place_result = "seabloom-cluster",
@@ -57,7 +58,7 @@ data:extend({
       {size=64, filename="__wood-universe-assets__/graphics/icons/seabloom-2.png", scale=0.5},
       {size=64, filename="__wood-universe-assets__/graphics/icons/seabloom-3.png", scale=0.5}
     },
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "d[agriculture]-c[seabloom]",
     fuel_category = "chemical",
     fuel_value = "100kJ",
@@ -84,7 +85,7 @@ data:extend({
       {size=64, filename="__wood-universe-assets__/graphics/icons/seawilt-2.png", scale=0.5},
       {size=64, filename="__wood-universe-assets__/graphics/icons/seawilt-3.png", scale=0.5}
     },
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "d[agriculture]-b[seawilt]",
     plant_result = "seabloom-straggler",
     place_result = "seabloom-straggler",
@@ -104,7 +105,7 @@ data:extend({
     type = "capsule",
     name = "seaweed-snack",
     icon = "__wood-universe-assets__/graphics/icons/seaweed-snack.png",
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "d[agriculture]-d[seaweed-snack]",
     inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,

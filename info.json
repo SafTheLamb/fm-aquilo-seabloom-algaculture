@@ -1,9 +1,9 @@
 {
   "name": "aquilo-seabloom-algaculture",
   "title": "Wooden Aquilo: Seabloom Algaculture",
-  "description": "",
+  "description": "Cook wood from algae somehow native to Aquilo's frozen wasteland",
   "author": "SafTheLamb",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "factorio_version": "2.0",
   "homepage": "https://github.com/SafTheLamb/fm-aquilo-seabloom-algaculture",
   "dependencies": [

@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.5
+  Compatibility:
+    - Add compatibility for Bioprocessing Group
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.4
   Compatibility:
     - Temporarily move surface condition changes to data-final fixes until Factorissimo 3 is updated

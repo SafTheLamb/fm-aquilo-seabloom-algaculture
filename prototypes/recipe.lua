@@ -5,6 +5,8 @@ if mods["any-planet-start"] then
   aquilo_start = settings.startup["aps-planet"].value == "aquilo"
 end
 
+local subgroup = mods["bioprocessing-tab"] and "aquilo-algaculture" or "aquilo-processes"
+
 data:extend({
   {
     type = "recipe",
@@ -40,7 +42,7 @@ data:extend({
       {icon=(chip_item == "woodchips") and "__wood-base-assets__/graphics/icons/woodchips.png" or "__base__/graphics/icons/wood.png"}
     },
     category = "organic-or-chemistry",
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "g[algaculture]-a[woodchips]",
     enabled = false,
     auto_recycle = false,
@@ -88,7 +90,7 @@ data:extend({
       {icon="__space-age__/graphics/icons/fluid/fluoroketone-hot.png", shift={-8,-8}, scale=0.3}
     },
     category = "chemistry-or-cryogenics",
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "g[algaculture]-c[cultivation]",
     enabled = false,
     auto_recycle = false,
@@ -112,7 +114,7 @@ data:extend({
     localised_name = {"recipe-name.nutrients-from-seabloom"},
     icon = "__wood-universe-assets__/graphics/icons/nutrients-from-seabloom.png",
     category = "organic-or-assembling",
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "g[algaculture]-e[nutrients]",
     enabled = false,
     auto_recycle = false,
@@ -126,7 +128,7 @@ data:extend({
     type = "recipe",
     name = "seaweed-snack",
     category = mods["wood-industry"] and "organic-or-kiln-smelting" or "organic",
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "g[algaculture]-f[snack]",
     enabled = false,
     auto_recycle = false,
@@ -151,7 +153,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
         {icon="__wood-base-assets__/graphics/icons/resin.png", draw_background=true},
       },
       category = mods["wood-industry"] and "kiln-smelting" or "smelting",
-      subgroup = "aquilo-processes",
+      subgroup = subgroup,
       order = "g[algaculture]-d[juicing]",
       enabled = false,
       auto_recycle = false,
@@ -175,7 +177,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
         {icon="__base__/graphics/icons/wood.png", draw_background=true},
       },
       category = "organic-or-chemistry",
-      subgroup = "aquilo-processes",
+      subgroup = subgroup,
       order = "g[algaculture]-b[wood]",
       enabled = false,
       auto_recycle = false,
