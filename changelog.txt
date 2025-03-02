@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.7
+  Changes:
+    - Change Seabloom juicing (Resin) to be a chemistry recipe
+    - Seabloom juicing now yields extra ammonia as a byproduct
+  Bugfixes:
+    - Fix seawilt spoilage not being moved to the Bioprocessing tab when present
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.6
   Bugfixes:
     - Fix mod setting localization

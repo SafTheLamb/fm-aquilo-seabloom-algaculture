@@ -68,7 +68,7 @@ data:extend({
       {icon="__space-age__/graphics/icons/spoilage.png", draw_background=true},
     },
     category = mods["wood-industry"] and "kiln-smelting" or "smelting",
-    subgroup = "aquilo-processes",
+    subgroup = subgroup,
     order = "g[algaculture]-g[spoilage]",
     enabled = false,
     auto_recycle = false,
@@ -152,7 +152,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
         {icon="__wood-universe-assets__/graphics/icons/seabloom.png", shift={-10,-10}, scale=0.4},
         {icon="__wood-base-assets__/graphics/icons/resin.png", draw_background=true},
       },
-      category = mods["wood-industry"] and "kiln-smelting" or "smelting",
+      category = "organic-or-chemistry",
       subgroup = subgroup,
       order = "g[algaculture]-d[juicing]",
       enabled = false,
@@ -164,7 +164,8 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
         {type="item", name="seabloom", amount=1}
       },
       results = {
-        {type="item", name="resin", amount=4}
+        {type="item", name="resin", amount=4},
+        {type="fluid", name="ammonia", amount=10},
       },
       main_product = ""
     },
