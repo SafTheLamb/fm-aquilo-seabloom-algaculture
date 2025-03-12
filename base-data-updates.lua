@@ -16,5 +16,7 @@ ftech.add_prereq("cryogenic-plant", "seabloom-algaculture")
 ftech.add_unlock("cryogenic-plant", "seabloom-cultivation")
 
 local aquilo = data.raw.planet["aquilo"]
-aquilo.map_gen_settings.autoplace_controls["seabloom"] = {}
-aquilo.map_gen_settings.autoplace_settings["entity"].settings["seabloom-cluster"] = {}
+if aquilo and aquilo.map_gen_settings and aquilo.map_gen_settings.autoplace_controls then
+  aquilo.map_gen_settings.autoplace_controls["seabloom"] = {}
+  aquilo.map_gen_settings.autoplace_settings["entity"].settings["seabloom-cluster"] = {}
+end

@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.8
+  Bugfixes:
+    - Fix crash when Aquilo does not have map gen settings
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.7
   Changes:
     - Change Seabloom juicing (Resin) to be a chemistry recipe
