@@ -16,12 +16,15 @@ data:extend({
     close_sound = sounds.machine_close,
     input_inventory_size = 3,
     radius_visualisation_picture = {
-      filename = "__wood-universe-assets__/graphics/algaculture-square.png",
+      filename = "__aquilo-seabloom-algaculture__/graphics/algaculture-square.png",
       priority = "extra-high-no-scale",
       width = 10,
-      height = 10
+      height = 10,
+      scale = 0.5/3
     },
     growth_grid_tile_size = 1,
+    growth_area_radius = 0.3,
+    random_growth_offset = 0.15,
     radius = 5,
     crane = require("prototypes.entity.algacultural-bay-crane"),
     planting_procedure_points = {

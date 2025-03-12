@@ -123,7 +123,7 @@ data:extend({
     },
     mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
     mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
-    growth_ticks = 1 * minute,
+    growth_ticks = 2 * minute,
     harvest_emissions = plant_harvest_emissions,
     max_health = 10,
     collision_box = {{-0.3, -0.3}, {0.3, 0.3}},
@@ -148,86 +148,72 @@ data:extend({
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{0.8, 0.2}},
+            offsets = {{0.4, 0.2}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{-0.8, -0.1}},
+            offsets = {{-0.4, -0.1}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{0.1, 0.8}},
+            offsets = {{0.1, 0.4}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{0, -0.6}},
+            offsets = {{0, -0.4}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{0.7, 0.7}},
+            offsets = {{0.3, 0.3}},
             check_buildability = true,
-            probability = 0.1
-          },
-          {
-            type = "create-entity",
-            entity_name = "seabloom-straggler",
-            offsets = {{-0.6, -0.7}},
-            check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
             offsets = {{-0.4, 0.7}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{0.6, -0.4}},
+            offsets = {{0.6,0.5}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{1.2,0.9}},
+            offsets = {{0.6,-0.2}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{1.3,-0.2}},
+            offsets = {{-0.6,0.4}},
             check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
           {
             type = "create-entity",
             entity_name = "seabloom-straggler",
-            offsets = {{-1.3,0.5}},
+            offsets = {{-0.6,-0.3}},
             check_buildability = true,
-            probability = 0.1
-          },
-          {
-            type = "create-entity",
-            entity_name = "seabloom-straggler",
-            offsets = {{-1.2,-0.3}},
-            check_buildability = true,
-            probability = 0.1
+            probability = 0.05
           },
         }
       }
@@ -279,7 +265,7 @@ data:extend({
     },
     mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
     mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
-    growth_ticks = 1 * minute,
+    growth_ticks = 2 * minute,
     harvest_emissions = plant_harvest_emissions,
     max_health = 10,
     collision_box = {{-0.3, -0.3}, {0.3, 0.3}},
