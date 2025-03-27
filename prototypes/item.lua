@@ -112,7 +112,7 @@ data:extend({
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
     weight = 1*kg,
-    spoil_ticks = 2*hour,
+    spoil_ticks = 2.16*hour,
     spoil_result = "seaweed",
     random_tint_color = item_tints.organic_green,
     capsule_action = item_effects.seaweed_snack_regen

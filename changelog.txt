@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+  Bugfixes:
+    - Fix missing locale for seaweed snack
+  Changes:
+    - Seaweed snacks take slightly longer to spoil
+
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
   Changes:
     - Reduced amount of stragglers spawned by planted clusters
