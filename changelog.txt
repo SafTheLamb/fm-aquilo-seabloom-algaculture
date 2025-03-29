@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+  Bugfixes:
+    - Fix opaque seabloom sprites when animated trees are disabled
+
+---------------------------------------------------------------------------------------------------
 Version: 0.3.1
   Bugfixes:
     - Fix missing locale for seaweed snack

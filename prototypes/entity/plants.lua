@@ -27,7 +27,7 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
     local variation = {
       trunk = {
         filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-trunk.png",
-        blend_mode = "multiplicative",
+        flags = { "mipmap" },
         width = width,
         height = height,
         x = x,
@@ -39,6 +39,7 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
       },
       leaves = {
         filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-harvest.png",
+        flags = { "mipmap" },
         width = width,
         height = height,
         x = x,
@@ -61,6 +62,7 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
         frame_count = 2,
         lines_per_file = 1,
         line_length = 1,
+        flags = { "mipmap", "shadow" },
         filenames =
         {
           "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-harvest-shadow.png",
