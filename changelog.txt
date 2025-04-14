@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: ????
+Date: 2025-04-14
   Changes:
     - Integrate graphics to remove dependency on wooden universe assets
     - Add 1 Seabloom to recipes for Cryogenic science pack and Ammonia rocket fuel
