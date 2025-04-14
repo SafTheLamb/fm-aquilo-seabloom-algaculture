@@ -26,7 +26,7 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
     local y = math.floor((i-1)/per_row) * height
     local variation = {
       trunk = {
-        filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-trunk.png",
+        filename = "__aquilo-seabloom-algaculture__/graphics/entity/plant/"..name.."/"..name.."-trunk.png",
         flags = { "mipmap" },
         width = width,
         height = height,
@@ -38,7 +38,7 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
         scale = 0.33 * scale_multiplier
       },
       leaves = {
-        filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-harvest.png",
+        filename = "__aquilo-seabloom-algaculture__/graphics/entity/plant/"..name.."/"..name.."-harvest.png",
         flags = { "mipmap" },
         width = width,
         height = height,
@@ -49,7 +49,7 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
         scale = 0.33 * scale_multiplier
       },
       normal = {
-        filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-normal.png",
+        filename = "__aquilo-seabloom-algaculture__/graphics/entity/plant/"..name.."/"..name.."-normal.png",
         width = width,
         height = height,
         x = x,
@@ -65,8 +65,8 @@ local function aquilo_algae_variations(name, variation_count, per_row, scale_mul
         flags = { "mipmap", "shadow" },
         filenames =
         {
-          "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-harvest-shadow.png",
-          "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-shadow.png"
+          "__aquilo-seabloom-algaculture__/graphics/entity/plant/"..name.."/"..name.."-harvest-shadow.png",
+          "__aquilo-seabloom-algaculture__/graphics/entity/plant/"..name.."/"..name.."-shadow.png"
         },
         width = width,
         height = height,
@@ -110,7 +110,7 @@ data:extend({
   {
     type = "plant",
     name = "seabloom-cluster",
-    icon = "__wood-universe-assets__/graphics/icons/seabloom.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/seabloom.png",
     flags = plant_flags,
     minable = {
       mining_particle = "leaf-particle",
@@ -252,7 +252,7 @@ data:extend({
   {
     type = "plant",
     name = "seabloom-straggler",
-    icon = "__wood-universe-assets__/graphics/icons/seawilt.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/seawilt.png",
     flags = plant_flags,
     minable = {
       mining_particle = "leaf-particle",

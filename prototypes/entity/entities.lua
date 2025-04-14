@@ -5,7 +5,7 @@ data:extend({
   {
     type = "agricultural-tower",
     name = "algacultural-bay",
-    icon = "__wood-universe-assets__/graphics/icons/algacultural-bay.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/algacultural-bay.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "algacultural-bay"},
     fast_replaceable_group = "algacultural-bay",
@@ -104,13 +104,13 @@ data:extend({
     graphics_set = {
       animation = {
         layers = {
-          util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base", {
+          util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-base", {
             priority = "high",
             animation_speed = 0.25,
             frame_count = 64,
             scale = 1/3
           }),
-          util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base-shadow", {
+          util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-base-shadow", {
             priority = "high",
             frame_count = 1,
             repeat_count = 64,
@@ -124,7 +124,7 @@ data:extend({
         {
           always_draw = true,
           fog_mask = { rect = {{-30, -30}, {30, -2.75}}, falloff = 1 },
-          animation = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base", {
+          animation = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-base", {
             frame_count = 1,
             scale = 1/3
           }),
@@ -170,7 +170,7 @@ data:extend({
       },
       water_reflection = {
         pictures = {
-          filename = "__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-base-reflection.png",
+          filename = "__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-base-reflection.png",
           priority = "extra-high",
           width = 24,
           height = 36,

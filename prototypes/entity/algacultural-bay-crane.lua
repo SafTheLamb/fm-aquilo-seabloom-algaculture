@@ -45,7 +45,7 @@ return {
 
     parts = {
       {
-        rotated_sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-1", {
+        rotated_sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-1", {
           priority = "very-low",
           dice = 4,
           direction_count = 128,
@@ -74,7 +74,7 @@ return {
         name = "hub"
       },
       {
-        rotated_sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-3", {
+        rotated_sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-3", {
           priority = "very-low",
           direction_count = 128,
           scale = 0.5 * BAY_CRANE_SCALE
@@ -101,7 +101,7 @@ return {
         name = "arm_inner"
       },
       {
-        rotated_sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-4", {
+        rotated_sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-4", {
           priority = "very-low",
           direction_count = 128,
           scale = 0.5 * BAY_CRANE_SCALE
@@ -129,7 +129,7 @@ return {
         name = "arm_inner_joint"
       },
       {
-        rotated_sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-5", {
+        rotated_sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-5", {
           priority = "very-low",
           direction_count = 128,
           scale = 0.5 * BAY_CRANE_SCALE
@@ -155,7 +155,7 @@ return {
         name = "arm_central"
       },
       {
-        rotated_sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-6", {
+        rotated_sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-6", {
           priority = "very-low",
           direction_count = 128,
           scale = 0.5 * BAY_CRANE_SCALE
@@ -183,7 +183,7 @@ return {
         name = "arm_central_joint"
       },
       {
-        rotated_sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-7", {
+        rotated_sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-7", {
           priority = "very-low",
           direction_count = 128,
           scale = 0.5 * BAY_CRANE_SCALE
@@ -210,7 +210,7 @@ return {
         name = "arm_outer"
       },
       {
-        rotated_sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-8", {
+        rotated_sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-8", {
           priority = "very-low",
           direction_count = 64,
           scale = 0.5 * BAY_CRANE_SCALE
@@ -232,7 +232,7 @@ return {
         name = "grappler-hub"
       },
       {
-        sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-9", {
+        sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-9", {
           priority = "very-low",
           scale = 0.5 * BAY_CRANE_SCALE
         }),
@@ -254,7 +254,7 @@ return {
         name = "telescope"
       },
       {
-        sprite = util.sprite_load("__wood-universe-assets__/graphics/entity/algacultural-bay/algacultural-bay-crane-10", {
+        sprite = util.sprite_load("__aquilo-seabloom-algaculture__/graphics/entity/algacultural-bay/algacultural-bay-crane-10", {
           priority = "very-low",
           scale = 0.5 * BAY_CRANE_SCALE
         }),

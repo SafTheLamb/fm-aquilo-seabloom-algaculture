@@ -1,15 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: ????
+  Changes:
+    - Integrate graphics to remove dependency on wooden universe assets
+    - Add 1 Seabloom to recipes for Cryogenic science pack and Ammonia rocket fuel
+  Compatibility:
+    - Add voidcraft compatibility
+---------------------------------------------------------------------------------------------------
 Version: 0.3.2
   Bugfixes:
     - Fix opaque seabloom sprites when animated trees are disabled
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
   Bugfixes:
     - Fix missing locale for seaweed snack
   Changes:
     - Seaweed snacks take slightly longer to spoil
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
   Changes:
@@ -17,12 +23,10 @@ Version: 0.3.0
     - Doubled growth time from 1 to 2 minutes now that seabloom can be planted much more efficiently
   Bugfixes:
     - Fix for Factorio version 2.0.40 to include 
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.8
   Bugfixes:
     - Fix crash when Aquilo does not have map gen settings
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.7
   Changes:
@@ -30,38 +34,31 @@ Version: 0.2.7
     - Seabloom juicing now yields extra ammonia as a byproduct
   Bugfixes:
     - Fix seawilt spoilage not being moved to the Bioprocessing tab when present
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.6
   Bugfixes:
     - Fix mod setting localization
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.5
   Compatibility:
     - Add compatibility for Bioprocessing Group
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.4
   Compatibility:
     - Temporarily move surface condition changes to data-final fixes until Factorissimo 3 is updated
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
   Changes:
     - Limit algacultural bay recipe to have the same surface conditions as the entity itself
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
   Changes:
     - Considerably increase cost of Algacultural bays (when not using any planet start on Aquilo)
     - Restrict Algacultural bays to Aquilo for now.
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.1
   Compatibility:
     - Factorissimo 3 support, relaxing solar power restriction to 1%
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
   Major Features:
@@ -70,17 +67,14 @@ Version: 0.2.0
   Changes:
     - Add Wooden Industry as an optional dependency
     - Increased seaweed spoilage time from 2 to 4 minutes
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
   Changes:
     - Change recipe for blooming seabloom to require fluoroketone instead
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
   Bugfixes:
     - Fix localisation of world-generated seabloom clusters
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
   Major Features:

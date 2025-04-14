@@ -38,7 +38,7 @@ data:extend({
     name = "seaweed-blanching",
     localised_name = {"recipe-name.seaweed-blanching"},
     icons = {
-      {icon="__wood-universe-assets__/graphics/icons/seaweed.png", shift={-8,-8}, scale=0.4},
+      {icon="__aquilo-seabloom-algaculture__/graphics/icons/seaweed.png", shift={-8,-8}, scale=0.4},
       {icon=(chip_item == "woodchips") and "__wood-base-assets__/graphics/icons/woodchips.png" or "__base__/graphics/icons/wood.png"}
     },
     category = "organic-or-chemistry",
@@ -64,7 +64,7 @@ data:extend({
     type = "recipe",
     name = "seawilt-spoilage",
     icons = {
-      {icon="__wood-universe-assets__/graphics/icons/seawilt.png", shift={-12,-12}, scale=0.4},
+      {icon="__aquilo-seabloom-algaculture__/graphics/icons/seawilt.png", shift={-12,-12}, scale=0.4},
       {icon="__space-age__/graphics/icons/spoilage.png", draw_background=true},
     },
     category = mods["wood-industry"] and "kiln-smelting" or "smelting",
@@ -86,7 +86,7 @@ data:extend({
     type = "recipe",
     name = "seabloom-cultivation",
     icons = {
-      {icon="__wood-universe-assets__/graphics/icons/seabloom.png"},
+      {icon="__aquilo-seabloom-algaculture__/graphics/icons/seabloom.png"},
       {icon="__space-age__/graphics/icons/fluid/fluoroketone-hot.png", shift={-8,-8}, scale=0.3}
     },
     category = "chemistry-or-cryogenics",
@@ -112,7 +112,7 @@ data:extend({
     type = "recipe",
     name = "nutrients-from-seabloom",
     localised_name = {"recipe-name.nutrients-from-seabloom"},
-    icon = "__wood-universe-assets__/graphics/icons/nutrients-from-seabloom.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/nutrients-from-seabloom.png",
     category = "organic-or-assembling",
     subgroup = subgroup,
     order = "g[algaculture]-e[nutrients]",
@@ -149,7 +149,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       type = "recipe",
       name = "seabloom-juicing",
       icons = {
-        {icon="__wood-universe-assets__/graphics/icons/seabloom.png", shift={-10,-10}, scale=0.4},
+        {icon="__aquilo-seabloom-algaculture__/graphics/icons/seabloom.png", shift={-10,-10}, scale=0.4},
         {icon="__wood-base-assets__/graphics/icons/resin.png", draw_background=true},
       },
       category = "organic-or-chemistry",
@@ -173,7 +173,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       type = "recipe",
       name = "reconstituted-wood-aquilo",
       icons = {
-        {icon="__wood-universe-assets__/graphics/icons/seaweed.png", shift={-8,-8}, scale=0.4},
+        {icon="__aquilo-seabloom-algaculture__/graphics/icons/seaweed.png", shift={-8,-8}, scale=0.4},
         {icon="__wood-base-assets__/graphics/icons/resin.png", shift={8,-8}, scale=0.4},
         {icon="__base__/graphics/icons/wood.png", draw_background=true},
       },

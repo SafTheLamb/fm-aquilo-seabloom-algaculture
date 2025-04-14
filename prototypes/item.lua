@@ -10,7 +10,7 @@ data:extend({
   {
     type = "item",
     name = "algacultural-bay",
-    icon = "__wood-universe-assets__/graphics/icons/algacultural-bay.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/algacultural-bay.png",
     subgroup = "agriculture",
     order = "a[algacultural-bay]",
     inventory_move_sound = item_sounds.mechanical_large_inventory_move,
@@ -24,12 +24,12 @@ data:extend({
     type = "capsule",
     name = "seaweed",
     localised_name = {"item-name.seaweed"},
-    icon = "__wood-universe-assets__/graphics/icons/seaweed.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/seaweed.png",
     pictures = {
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seaweed.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seaweed-1.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seaweed-2.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seaweed-3.png", scale=0.5}
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seaweed.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seaweed-1.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seaweed-2.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seaweed-3.png", scale=0.5}
     },
     subgroup = subgroup,
     order = "d[agriculture]-a[seaweed]",
@@ -51,12 +51,12 @@ data:extend({
     type = "capsule",
     name = "seabloom",
     localised_name = {"item-name.seabloom"},
-    icon = "__wood-universe-assets__/graphics/icons/seabloom.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/seabloom.png",
     pictures = {
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seabloom.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seabloom-1.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seabloom-2.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seabloom-3.png", scale=0.5}
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seabloom.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seabloom-1.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seabloom-2.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seabloom-3.png", scale=0.5}
     },
     subgroup = subgroup,
     order = "d[agriculture]-c[seabloom]",
@@ -78,12 +78,12 @@ data:extend({
     type = "item",
     name = "seawilt",
     localised_name = {"item-name.seawilt"},
-    icon = "__wood-universe-assets__/graphics/icons/seawilt.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/seawilt.png",
     pictures = {
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seawilt.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seawilt-1.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seawilt-2.png", scale=0.5},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/seawilt-3.png", scale=0.5}
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seawilt.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seawilt-1.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seawilt-2.png", scale=0.5},
+      {size=64, filename="__aquilo-seabloom-algaculture__/graphics/icons/seawilt-3.png", scale=0.5}
     },
     subgroup = subgroup,
     order = "d[agriculture]-b[seawilt]",
@@ -104,7 +104,7 @@ data:extend({
   {
     type = "capsule",
     name = "seaweed-snack",
-    icon = "__wood-universe-assets__/graphics/icons/seaweed-snack.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/icons/seaweed-snack.png",
     subgroup = subgroup,
     order = "d[agriculture]-d[seaweed-snack]",
     inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,

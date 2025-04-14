@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "seabloom-algaculture",
-    icon = "__wood-universe-assets__/graphics/technology/seabloom-algaculture.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/technology/seabloom-algaculture.png",
     icon_size = 256,
     effects = {
       {type="unlock-recipe", recipe="algacultural-bay"},
@@ -18,7 +18,7 @@ data:extend({
   {
     type = "technology",
     name = "advanced-seabloom-processing",
-    icon = "__wood-universe-assets__/graphics/technology/seabloom-algaculture.png",
+    icon = "__aquilo-seabloom-algaculture__/graphics/technology/seabloom-algaculture.png",
     icon_size = 256,
     effects = {
       {type="unlock-recipe", recipe="nutrients-from-seabloom"},
