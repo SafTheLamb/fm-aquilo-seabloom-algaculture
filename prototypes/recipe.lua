@@ -39,7 +39,7 @@ data:extend({
     localised_name = {"recipe-name.seaweed-blanching"},
     icons = {
       {icon="__aquilo-seabloom-algaculture__/graphics/icons/seaweed.png", shift={-8,-8}, scale=0.4},
-      {icon=(chip_item == "woodchips") and "__wood-base-assets__/graphics/icons/woodchips.png" or "__base__/graphics/icons/wood.png"}
+      {icon=(chip_item == "woodchips") and "__wood-industry__/graphics/icons/woodchips.png" or "__base__/graphics/icons/wood.png"}
     },
     category = "organic-or-chemistry",
     subgroup = subgroup,
@@ -150,7 +150,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       name = "seabloom-juicing",
       icons = {
         {icon="__aquilo-seabloom-algaculture__/graphics/icons/seabloom.png", shift={-10,-10}, scale=0.4},
-        {icon="__wood-base-assets__/graphics/icons/resin.png", draw_background=true},
+        {icon="__wood-industry__/graphics/icons/resin.png", draw_background=true},
       },
       category = "organic-or-chemistry",
       subgroup = subgroup,
@@ -174,7 +174,7 @@ if mods["wood-industry"] and settings.startup["wood-industry-resin"].value then
       name = "reconstituted-wood-aquilo",
       icons = {
         {icon="__aquilo-seabloom-algaculture__/graphics/icons/seaweed.png", shift={-8,-8}, scale=0.4},
-        {icon="__wood-base-assets__/graphics/icons/resin.png", shift={8,-8}, scale=0.4},
+        {icon="__wood-industry__/graphics/icons/resin.png", shift={8,-8}, scale=0.4},
         {icon="__base__/graphics/icons/wood.png", draw_background=true},
       },
       category = "organic-or-chemistry",
