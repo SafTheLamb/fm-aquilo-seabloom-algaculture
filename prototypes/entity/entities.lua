@@ -27,6 +27,7 @@ data:extend({
     random_growth_offset = 0.15,
     radius = 5,
     crane = require("prototypes.entity.algacultural-bay-crane"),
+    accepted_seeds = {"seaweed", "seawilt"},
     planting_procedure_points = {
       -- {0.0, 0.0, 0.75},
       -- {0.0, 0.0, 0.0},

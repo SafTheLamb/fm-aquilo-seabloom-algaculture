@@ -2,6 +2,10 @@
 Version: 0.4.2
 Date: ????
   Changes:
+    - Limit algacultural bay to only accept seaweed and seawilt by default
+    - If any other mods use the algacultural bay, they will need to add their "seeds" to it!
+  Compatibility:
+    - Voidcraft: Add fluxize and coherize recipe variants
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 2025-04-24
