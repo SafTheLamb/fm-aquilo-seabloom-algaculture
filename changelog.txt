@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.4
-Date: ????
+Date: 2026-01-07
   Changes:
     - Removed surface condition limitations from the algacultural bay (this is possible thanks to the accepted_seeds property)
 ---------------------------------------------------------------------------------------------------
