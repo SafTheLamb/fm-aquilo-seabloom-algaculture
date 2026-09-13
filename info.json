@@ -10,11 +10,11 @@
     "ignore": ["thumbnail.afphoto", "**/*.afphoto", "**/*.ase", "**/*.afphoto~lock~", "**/*.pdn"]
   },
   "dependencies": [
-    "base >= 2.0.40",
-    "fdsl >= 0.1.8",
+    "base",
+    "fdsl",
     "space-age",
     "? wood-industry",
-    "(?) Voidcraft >= 1.4"
+    "(?) Voidcraft"
   ],
   "space_travel_required": true
 }
